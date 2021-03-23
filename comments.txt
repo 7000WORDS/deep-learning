@@ -10,3 +10,5 @@ And then answers the questions according to the relevancy of the questions.
 
 
 so basically it checks the internet for answers cross references it with the ones it has and then creates a relevant answer to the question.
+
+I'll be putting this project on hold for the timebeing.
