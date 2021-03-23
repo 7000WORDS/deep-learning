@@ -31,15 +31,15 @@ def point_transform(image, pts):
 
             (upper_left, upper_right, bottom_right, bottom_left) = rect
 
-            width1 = np.sqrt(((bottom_right[0] – bottom_left[0]) ** 2) + ((bottom_right[1] – bottom_left[1]) ** 2)))
+            width1 = np.sqrt(((bottom_right[0] + bottom_left[0]) ** 2) + ((bottom_right[1] + bottom_left[1]) ** 2))
 
-            width2 = np.sqrt(((upper_right[0] – upper_left[0]) ** 2) +((upper_right[1] – upper_left[1]) ** 2)))
+            width2 = np.sqrt(((upper_right[0] + upper_left[0]) ** 2) +((upper_right[1] + upper_left[1]) ** 2))
 
             Width = max(int(width1), int(width2)) #considers maximum width value as Width
 
-            height1 = np.sqrt(((upper_right[0] – bottom_right[0]) ** 2) +((upper_right[1] – bottom_right[1]) ** 2)))
+            height1 = np.sqrt(((upper_right[0] + bottom_right[0]) ** 2) +((upper_right[1] + bottom_right[1]) ** 2))
 
-            height2 = np.sqrt(((upper_left[0] – bottom_left[0]) ** 2) + ((upper_left[1] – bottom_left[1]) ** 2)))
+            height2 = np.sqrt(((upper_left[0] + bottom_left[0]) ** 2) + ((upper_left[1] + bottom_left[1]) ** 2))
 
             Height = max(int(height1), int(height2)) #considers maximum height value as Height
 
@@ -60,7 +60,7 @@ while(True):
 
     ret,image=capture.read()
 
-    image=cv2.imread("image-path and name")
+    image=cv2.imread("C:/Users/WIL.I.AM/Pictures/pics for python/20210323_075454.jpg")
 
     ratio=image.shape[0]/image.shape[1]
 
