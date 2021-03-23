@@ -1,0 +1,12 @@
+This is a document for python.
+This is for a bot to be used for homework.
+I usually back out of difficult tasks because I usually don't know everything in there.
+But not today, I want this project to work out for him as it will really help me in schoolwork.
+
+
+This project is meant to be a bot that scans an online homework, looks for the questions through deep learning.
+Checks the internet through returns relevant answers to the questions,double checks it through deep learning.
+And then answers the questions according to the relevancy of the questions.
+
+
+so basically it checks the internet for answers cross references it with the ones it has and then creates a relevant answer to the question.
